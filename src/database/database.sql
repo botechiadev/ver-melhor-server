@@ -1,0 +1,14 @@
+-- Active: 1707289748787@@127.0.0.1@3306
+CREATE TABLE users (
+  id TEXT PRIMARY KEY UNIQUE,
+  idProfile TEXT NOT NULL UNIQUE,
+  fullname TEXT NOT NULL,
+  username TEXT NOT NULL UNIQUE,
+  email TEXT NOT NULL UNIQUE,
+  password_hash TEXT NOT NULL,
+  role TEXT NOT NULL,
+  avatar TEXT NOT NULL,
+  crm TEXT UNIQUE,
+  created_at TEXT NOT NULL DEFAULT TIMESTAMP
+ )
+  
